@@ -1,0 +1,142 @@
+/* Global View */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EBEBEB;
+}
+.container{
+    max-width: 1024px;
+    min-height: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-container{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+header{
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mybutton{
+    text-decoration: none;
+    border: thin solid white;
+    padding: 15px;
+    color: white;
+    margin-left: 20px;
+}
+.mybutton:hover{
+    background-color: coral;
+    transition-duration: 1s;
+}
+.logo p{
+    color: white;
+}
+.bold{
+    font-weight: bold;
+}
+.col{
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: cadetblue;
+}
+.col p{
+    font-size: 0.875rem;
+    padding: 10px;
+    font-size: 0.875rem;
+    color: white;
+    line-height: 1.25rem;
+}
+.hide-desktop{
+    display: none;
+}
+.col img{
+    width: 100%;
+    height: auto;
+}
+.col p::first-line{
+    font-weight: bold;
+}
+.mob-wrapper{
+    display: none;
+}
+/* Tablet View */
+
+@media(max-width: 768px){
+ .col{
+     width: 45%;
+ }
+ .hide-desktop{
+    display: block;
+}
+header{
+    text-align: center;
+}
+nav{
+    display: none;
+}
+.navbutton{
+    display: block;
+    margin-left: 0px;
+    text-decoration: none;
+    border: thin solid white;
+    padding: 15px;
+    color: white;
+    background-color: coral;
+}
+.navbutton:hover{
+    background-color: rgb(60, 60, 60);
+    transition-duration: 1s;
+}
+.logo{
+    padding: 40px 0;
+}
+.header-container{
+    position: relative;
+    margin-bottom: 10px;
+}
+.mob-wrapper{
+    display: block;
+    padding-right: 60px;
+}
+.mob-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+}
+
+/* Mobile View */
+@media(max-width: 400px){
+  .col{
+      width: 100%;
+  }
+  .hide-mobile{
+      display: none;
+  }
+  header{
+      display: block;
+      text-align: center;
+  }
+  .mybutton{
+      display: block;
+      margin-left: 0px;
+  }
+  .logo{
+      padding: 40px 0;
+  }
+  .header-container{
+      position: relative;
+      margin-bottom: 10px;
+  }
+}
